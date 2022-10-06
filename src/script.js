@@ -7,13 +7,6 @@ let Cover = document.createElement("div");
 Cover.setAttribute("class", "Cover");
 main.appendChild(Cover);
 
-
-// let image = document.createElement("img");
-// image.setAttribute("class", "img");
-// image.src = "proj7.jpeg";
-// main.appendChild(image);
-
-
 let smallCover = document.createElement("div");
 smallCover.setAttribute("class", "smallCover");
 Cover.appendChild(smallCover);
@@ -74,53 +67,3 @@ clearButton.onclick = function () {
     }
 }, 86400000);
 
-
-//edit button
-// let editButton = document.createElement("button");
-// editButton.setAttribute("id", "editButton");
-// editButton.innerHTML = "Edit Task";
-// smallCover.appendChild(editButton);
-
-// editButton.onclick = function () {
-//     let newTaskDiv = document.getElementsByClassName("newTaskDiv");
-//     newTaskDiv[0].innerHTML = document.getElementById("input").value;
-// }
-
-//set time
-// let time = document.createElement("div");
-// time.setAttribute("class", "time");
-// Cover.appendChild(time);
-
-// let date = new Date();
-// let day = date.getDate();
-// let month = date.getMonth();
-// let year = date.getFullYear();
-// let hour = date.getHours();
-// let minute = date.getMinutes();
-// let second = date.getSeconds();
-
-// let timeText = document.createElement("p");
-// timeText.innerHTML = `${day}/${month}/${year} ${hour}:${minute}:${second}`;
-// time.appendChild(timeText);
-// smallCover.appendChild(time);
-
-// button.addEventListener("click", function () {
-//     let input = document.getElementById("input").value;
-//     let task = document.createElement("div");
-//     task.setAttribute("class", "task");
-//     Cover.appendChild(task);
-    
-//     let taskText = document.createElement("div");
-//     taskText.setAttribute("class", "taskText");
-//     taskText.innerHTML = input;
-//     task.appendChild(taskText);
-    
-//     let taskButton = document.createElement("button");
-//     taskButton.setAttribute("class", "taskButton");
-//     taskButton.innerHTML = "Delete";
-//     task.appendChild(taskButton);
-    
-//     taskButton.addEventListener("click", function () {
-//         task.remove();
-//     });
-// });
