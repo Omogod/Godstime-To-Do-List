@@ -53,6 +53,8 @@ deleteButton.onclick = function () {
 }
 
 //clear button
+
+
 let clearButton = document.createElement("button");
 clearButton.setAttribute("id", "clearButton");
 clearButton.innerHTML = "Clear All";
@@ -60,10 +62,17 @@ smallCover.appendChild(clearButton);
 
 clearButton.onclick = function () {
     let newTaskDiv = document.getElementsByClassName("newTaskDiv");
+    for (let i = 0; i < newTaskDiv.length; i++) {
+        newTaskDiv[i].remove();
+    }
+}
+
+    let clear = setInterval(function () {
+    let newTaskDiv = document.getElementsByClassName("newTaskDiv");
     while (newTaskDiv.length > 0) {
         newTaskDiv[0].remove();
     }
-};
+}, 86400000);
 
 
 //edit button
