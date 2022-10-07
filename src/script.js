@@ -16,7 +16,7 @@ main.appendChild(Cover);
 
 let smallCover = document.createElement("div");
 smallCover.setAttribute("class", "smallCover");
-Cover.appendChild(smallCover);
+main.appendChild(smallCover);
 
 let date = document.createElement("div");
 date.setAttribute("class", "date");
@@ -71,8 +71,8 @@ smallCover.appendChild(clearButton);
 
 clearButton.onclick = function () {
     let newTaskDiv = document.getElementsByClassName("newTaskDiv");
-    for (let i = 0; i < newTaskDiv.length; i++) {
-        newTaskDiv[i].remove();
+    while (newTaskDiv.length > 0) {
+        newTaskDiv[0].remove();
     }
 }
 
