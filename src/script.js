@@ -7,9 +7,25 @@ let Cover = document.createElement("div");
 Cover.setAttribute("class", "Cover");
 main.appendChild(Cover);
 
+
+// let image = document.createElement("img");
+// image.setAttribute("class", "img");
+// image.src = "proj7.jpeg";
+// main.appendChild(image);
+
+
 let smallCover = document.createElement("div");
 smallCover.setAttribute("class", "smallCover");
 Cover.appendChild(smallCover);
+
+let date = document.createElement("div");
+date.setAttribute("class", "date");
+smallCover.appendChild(date);
+
+let date1 = document.createElement("p");
+date1.setAttribute("class", "date1");
+date1.innerHTML = new Date().toDateString();
+date.appendChild(date1);
 
 let input = document.createElement("input");
 input.setAttribute("type", "text");
@@ -67,3 +83,58 @@ clearButton.onclick = function () {
     }
 }, 86400000);
 
+//date 
+
+
+
+
+
+//edit button
+// let editButton = document.createElement("button");
+// editButton.setAttribute("id", "editButton");
+// editButton.innerHTML = "Edit Task";
+// smallCover.appendChild(editButton);
+
+// editButton.onclick = function () {
+//     let newTaskDiv = document.getElementsByClassName("newTaskDiv");
+//     newTaskDiv[0].innerHTML = document.getElementById("input").value;
+// }
+
+//set time
+// let time = document.createElement("div");
+// time.setAttribute("class", "time");
+// Cover.appendChild(time);
+
+// let date = new Date();
+// let day = date.getDate();
+// let month = date.getMonth();
+// let year = date.getFullYear();
+// let hour = date.getHours();
+// let minute = date.getMinutes();
+// let second = date.getSeconds();
+
+// let timeText = document.createElement("p");
+// timeText.innerHTML = `${day}/${month}/${year} ${hour}:${minute}:${second}`;
+// time.appendChild(timeText);
+// smallCover.appendChild(time);
+
+// button.addEventListener("click", function () {
+//     let input = document.getElementById("input").value;
+//     let task = document.createElement("div");
+//     task.setAttribute("class", "task");
+//     Cover.appendChild(task);
+    
+//     let taskText = document.createElement("div");
+//     taskText.setAttribute("class", "taskText");
+//     taskText.innerHTML = input;
+//     task.appendChild(taskText);
+    
+//     let taskButton = document.createElement("button");
+//     taskButton.setAttribute("class", "taskButton");
+//     taskButton.innerHTML = "Delete";
+//     task.appendChild(taskButton);
+    
+//     taskButton.addEventListener("click", function () {
+//         task.remove();
+//     });
+// });

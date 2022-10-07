@@ -60,12 +60,21 @@ height: 150%;
    background: black;
    color: #fff;
    border-radius: 5px;
+   padding: 4px;
+   margin: 3px;
+   font-family: 'Poppins', sans-serif;
   }
 
   button {
     background: #000;
-    color: #fff;
-    border-radius: 5px;
+    color: white;
+    border-radius: 1px;
+    border: #000 1px solid;;  
+    padding: 4px;
+    margin: 3px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
   }
 
   .newTaskDiv {
@@ -74,5 +83,19 @@ height: 150%;
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .date {
+    background: #fff;
+    width: 24%;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 6%;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+
   }
   
